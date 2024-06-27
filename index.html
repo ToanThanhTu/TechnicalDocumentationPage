@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta information -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
@@ -8,8 +9,10 @@
   </head>
   <body>
     <main id="main-doc">
+      <!-- Navigation bar -->
       <nav id="navbar">
         <header>Java Introduction</header>
+        <!-- Navigation links -->
         <ul>
           <li><a class="nav-link" href="#What_is_Java?">What is Java?</a></li>
           <li><a class="nav-link" href="#Java_Variables">Java Variables</a></li>
@@ -19,11 +22,14 @@
           <li><a class="nav-link" href="#Reference">Reference</a></li>
         </ul>
       </nav>
+
+      <!-- Section: What is Java? -->
       <section class="main-section" id="What_is_Java?">
         <header>What is Java?</header>
         <p>Java is a popular programming language, created in 1995.</p>
         <p>It is owned by Oracle, and more than 3 billion devices run Java.</p>
         <p>Why use Java?</p>
+        <!-- List of reasons to use Java -->
         <ul>
           <li>It is one of the most popular programming languages in the world</li>
           <li>It is easy to learn and simple to use</li>
@@ -34,11 +40,14 @@
         <p>Here is a simple code snippet that will print the text "Hello World!" when run:</p>
         <code>System.out.println("Hello World");</code>
       </section>
+
+      <!-- Section: Java Variables -->
       <section class="main-section" id="Java_Variables">
         <header>Java Variables</header>
         <p>Variables are containers for storing data values.</p>
         <p>In Java, there are different types of variables, for example:</p>
-        <ul>
+        <!-- List of variable types -->
+        <ul>          
           <li><code>String</code> - stores text, such as "Hello". String values are surrounded by double quotes</li>
           <li><code>int</code> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
           <li><code>float</code> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
@@ -46,10 +55,13 @@
           <li><code>boolean</code> - stores values with two states: true or false</li>
         </ul>
       </section>
+
+      <!-- Section: Java If Else -->
       <section class="main-section" id="Java_If_Else">
         <header>Java If Else</header>
         <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
         <p>Java has the following conditional statements:</p>
+        <!-- List of conditional statements -->
         <ul>
           <li>Use if to specify a block of code to be executed, if a specified condition is true</li>
           <li>Use else to specify a block of code to be executed, if the same condition is false</li>
@@ -57,10 +69,13 @@
           <li>Use switch to specify many alternative blocks of code to be executed</li>
         </ul>
         <p>For Example:</p>
+        <!-- Example code block -->
         <code>
           if (20 > 18) { System.out.println("20 is greater than 18"); }
         </code>
       </section>
+
+      <!-- Section: Java Methods -->
       <section class="main-section" id="Java_Methods">
         <header>Java Methods</header>
         <p>A <b>method</b> is a block of code which only runs when it is called.</p>
@@ -68,25 +83,41 @@
         <p>Methods are used to perform certain actions, and they are also known as functions.</p>
         <p>Why use methods? To reuse code: define the code once, and use it many times.</p>
         <p>For Example: Create a method</p>
+        <!-- Example code block -->
         <code>public void myMethod() { // code to be executed }</code>
         <p>For Example: Call a method</p>
+        <!-- Example code block -->
         <code>myMethod();</code>
       </section>
+
+      <!-- Section: Java Classes -->
       <section class="main-section" id="Java_Classes">
         <header>Java Classes</header>
         <p>Classes and objects are the two main aspects of object-oriented programming.</p>
         <p>A class is a template for objects, and an object is an instance of a class.</p>
         <p>When the individual objects are created, they inherit all the variables and methods from the class.</p>
         <p>To create a class, use the keyword class:</p>
+        <!-- Example code block -->
         <code>public class Car { int numberOfWheels = 4; }</code>
         <p>To create an object of Main, specify the class name, followed by the object name, and use the keyword new:</p>
+        <!-- Example code block -->
         <code>Car myCarObj = new Car();</code>
       </section>
+
+      <!-- Section: Reference -->
       <section class="main-section" id="Reference">
         <header>Reference</header>
         <ul>
-          <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/java/default.asp" target="_blank">W3Schools</a></li>
+          <li>
+            <!-- Reference source -->
+            All the documentation in this page is taken from <a href="https://www.w3schools.com/java/default.asp" target="_blank">W3Schools</a>
+          </li>
+          <li>
+            <p class="source">This page is created by <a href="https://github.com/ToanThanhTu" target="_blank">Thanh Toan Tu</a></p>
+            <p class="source">26th April 2024 | <a href="https://github.com/ToanThanhTu/TechnicalDocumentationPage" target="_blank">Source Code</a></p>
+          </li>
         </ul>
+        
       </section>
     </main>
   </body>

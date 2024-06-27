@@ -1,3 +1,4 @@
+/* Global styles */
 html {
   min-width: 300px;
   background-color: #ffffff;
@@ -5,14 +6,17 @@ html {
   line-height: 1.5;
 }
 
+/* Smooth scrolling behavior for all elements */
 * {
   scroll-behavior: smooth;
 }
 
+/* Styles for headers */
 header {
   color: black;
 }
 
+/* Styles for navigation bar header */
 #navbar header {
   font-weight: bold;
   font-size: 1.7em;
@@ -20,52 +24,56 @@ header {
   margin: 10px;
 }
 
+/* Styles for the navigation bar */
 #navbar {
-  position: fixed;
+  position: fixed; /* Fixed position to keep it visible */
   min-width: 300px;
   top: 0px;
   left: 0px;
-  height: 100%;
+  height: 100%; /* Full height of the viewport */
   border-right: 2px double black;
-  line-height: 3em;
+  line-height: 3em; /* Line height for navigation links */
 }
 
+/* Styles for navigation links */
 #navbar ul {
-  padding: 0;
-  overflow: hidden;
+  padding: 0; /* Remove default padding */
+  overflow: hidden; /* Hide overflow */
 }
 
 #navbar ul li {
   border-top: 1px solid black;
-  list-style: none;
+  list-style: none; /* Remove default list styles */
   position: relative;
-  width: 100%;
+  width: 100%; /* Full width */
 }
 
 .nav-link {
   display: block;
-  text-decoration: none;
+  text-decoration: none; /* Remove underline */
   padding: 5px 20px;
   color: black;
 }
 
 .nav-link:hover {
-  background-color: rgb(200, 255, 255);
+  background-color: rgb(200, 255, 255); /* Light blue background on hover */
 }
 
-
+/* Main document content */
 #main-doc {
-  position: absolute;
-  margin-left: 300px;
+  position: absolute; /* Absolute positioning */
+  margin-left: 300px; /* Margin to the left of the navbar */
   padding: 20px;
   margin-bottom: 50px;
 }
 
+/* Styles for headers within main sections */
 .main-section header {
   font-size: 1.7em;
   font-weight: bold;
 }
 
+/* Styles for main sections */
 .main-section {
   margin-bottom: 1.5em;
   padding-bottom: 1.5em;
@@ -73,16 +81,18 @@ header {
 }
 
 .main-section:last-of-type {
-  border: none;
+  border: none; /* No border for the last main section */
 }
 
+/* Styles for code snippets */
 code {
   padding: 0.5em;
   background-color: #f7f7f7;
   border-radius: 3px;
 }
 
-@media (max-width: 300px) {
+/* Media query for smaller screens */
+@media (max-width: 600px) {
   #navbar {
     display: none;
   }
@@ -90,4 +100,10 @@ code {
   #main-doc {
     margin-left: 0px;
   }
+}
+
+/* Author and source code styling */
+.source {
+  line-height: 0.5;
+  font-style: italic;
 }
